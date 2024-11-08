@@ -37,6 +37,7 @@ body {
 .header a:hover h1 {
   color: #ff7f50;
 }
+
 .hero {
   grid-area: hero;
   height: 89vh;
@@ -67,19 +68,10 @@ body {
     -webkit-transform: translateY(0);
     opacity: 0.4;
   }
+
   100% {
     -webkit-transform: translateY(0.6em);
     opacity: 0.9;
-  }
-}
-
-@media (max-width: 425px) {
-  .hero {
-    height: 60vh;
-  }
-
-  .hero h2 {
-    font-size: 2.5rem;
   }
 }
 
@@ -135,17 +127,6 @@ body {
   background-size: cover;
 }
 
-@media (max-width: 425px) {
-  .about .item {
-    text-align: center;
-  }
-
-  .about {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
-
 .services {
   grid-area: services;
   display: grid;
@@ -181,12 +162,6 @@ body {
 
 .services .service:nth-child(2) {
   background-color: pink;
-}
-
-@media (max-width: 425px) {
-  .services {
-    grid-template-columns: 1fr;
-  }
 }
 
 .projects {
@@ -242,7 +217,7 @@ body {
   color: #fff;
 }
 
-.footer .social i{
+.footer .social i {
   font-size: 2rem;
   transition: 0.3s;
 }
